@@ -74,4 +74,19 @@ export default makeStyles((theme) => ({
     width: "70%",
     textShadow: "0px 1px 2px rgba(0, 0, 0, .5)",
   },
+  expandMore: {
+    textAlign: "center",
+    position: "absolute",
+    zIndex: 2,
+    bottom: 20,
+    left: 0,
+    width: "100%",
+    opacity: 0.5,
+  },
+  icon: {
+    color: "#fff",
+    height: 90,
+    width: 90,
+    pointerEvents: "none",
+  },
 }));

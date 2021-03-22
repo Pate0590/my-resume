@@ -1,12 +1,22 @@
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import IconButton from "@material-ui/core/IconButton";
+import scroll from "scroll";
+import getPage from "scroll-doc";
 
 import listOfLink from "./constants";
 import useStyles from "./styles";
 
+const page = getPage();
+
 const Header = () => {
   const classes = useStyles({ height: window.innerHeight });
+
+  const handleExpandMore = () => {
+    scroll.top(page, window.innerHeight);
+  };
   return (
     <header id="home" className={classes.header}>
       <Grid
@@ -44,6 +54,11 @@ const Header = () => {
             opportunities in web and mobile app development
           </Typography>
         </div>
+      </div>
+      <div className={classes.expandMore}>
+        <IconButton aria-label="expandMore" onClick={handleExpandMore}>
+          <KeyboardArrowDownIcon className={classes.icon} />
+        </IconButton>
       </div>
     </header>
   );
