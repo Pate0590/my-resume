@@ -12,7 +12,7 @@ const Resume = ({ setCurrentSection }) => {
 
   useEffect(() => {
     if (inView) {
-      setCurrentSection("#about");
+      setCurrentSection("#resume");
     }
   }, [setCurrentSection, inView]);
   return (
