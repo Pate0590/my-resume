@@ -12,6 +12,7 @@
     "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "react-use": "^17.2.1",
     "scroll": "^3.0.1",
     "scroll-doc": "^0.2.1",
     "web-vitals": "^1.0.1"
