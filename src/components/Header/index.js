@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
@@ -11,14 +13,30 @@ import useStyles from "./styles";
 
 const page = getPage();
 
-const Header = () => {
-  const classes = useStyles({ height: window.innerHeight });
+const Header = ({ currentSection }) => {
+  const [selectedMenu, setSelectedMenu] = useState("#home");
+  const { ref, inView, entry } = useInView({
+    threshold: 0.75,
+  });
+  const classes = useStyles({
+    height: window.innerHeight,
+    navBackground: inView ? "none" : "#333",
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setSelectedMenu("#home");
+    } else {
+      setSelectedMenu(currentSection);
+    }
+  }, [inView, currentSection]);
 
   const handleExpandMore = () => {
     scroll.top(page, window.innerHeight);
   };
+
   return (
-    <header id="home" className={classes.header}>
+    <header id="home" className={classes.header} ref={ref}>
       <Grid
         container
         direction="row"
@@ -33,8 +51,14 @@ const Header = () => {
               href={list.href}
               underline="none"
               variant="button"
+              onClick={() => {
+                setSelectedMenu(list.href);
+              }}
               TypographyClasses={{
-                colorPrimary: classes.link,
+                colorPrimary:
+                  selectedMenu === list.href
+                    ? classes.currentLink
+                    : classes.link,
                 button: classes.typographyRoots,
               }}
             >

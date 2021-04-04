@@ -1,14 +1,24 @@
-import React from "react";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "./styles";
 
-const About = () => {
+const About = ({ setCurrentSection }) => {
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+  });
   const classes = useStyles();
+
+  useEffect(() => {
+    if (inView) {
+      setCurrentSection("#about");
+    }
+  }, [setCurrentSection, inView]);
   return (
-    <section id="about">
+    <section id="about" ref={ref}>
       <Grid container spacing={3} className={classes.root}>
         <Hidden xsDown>
           <Grid item xs={6} className={classes.imageRoot}>
@@ -30,7 +40,7 @@ const About = () => {
             <Button
               variant="contained"
               color="primary"
-              href="#contained-buttons"
+              href="#resume"
               className={classes.button}
               classes={{ label: classes.label }}
             >
@@ -39,7 +49,7 @@ const About = () => {
             <Button
               variant="contained"
               color="secondary"
-              href="#contained-buttons"
+              href="#skills"
               className={classes.button}
               classes={{ label: classes.label }}
               label="My Skills"

@@ -10,7 +10,6 @@ export default makeStyles((theme) => ({
   imageRoot: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
   },
   button: {
     height: 100,
@@ -23,8 +22,8 @@ export default makeStyles((theme) => ({
     fontWeight: 600,
   },
   image: {
-    width: 120,
-    height: 120,
+    width: 250,
+    height: 250,
     borderRadius: "100%",
   },
   title: {

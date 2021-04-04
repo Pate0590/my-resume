@@ -21,6 +21,9 @@ export default makeStyles((theme) => ({
       height: "100%",
     },
   },
+  currentLink: {
+    color: "#F06000",
+  },
   link: {
     color: theme.palette.primary.contrastText,
   },
@@ -54,6 +57,7 @@ export default makeStyles((theme) => ({
     textShadow: "0px 1px 3px rgba(0, 0, 0, .8)",
   },
   gridRoot: {
+    background: (props) => props.navBackground,
     fontSize: 12,
     width: "100%",
     letterSpacing: 2.5,
