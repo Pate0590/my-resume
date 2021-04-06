@@ -27,7 +27,7 @@ const Resume = ({ setCurrentSection }) => {
           <Grid item xs={6} className={classes.rightSection}>
             <Typography variant="h5">Algonquin College</Typography>
             <p className={classes.description}>
-              Diploma in Computer Programmer
+              Advance Diploma in Computer Programmer
               <span className={classes.bull}>&bull;</span>
               <em className={classes.date}>April 2020</em>
             </p>
