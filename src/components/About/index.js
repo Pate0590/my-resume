@@ -30,7 +30,7 @@ const About = ({ setCurrentSection }) => {
             A bit about me
           </Typography>
           <p className={classes.subHeader}>
-            Hello there! I am Web Developer with 5+ yesrs of professional
+            Hello there! I am Web Developer with 5+ years of professional
             experience. I graduated with advance diploma in computer
             programming. I am into software development since young age.I am a
             life long learner. I am very good at fixing the bugs, helping
