@@ -46,21 +46,29 @@ const Resume = ({ setCurrentSection }) => {
             </Typography>
           </Grid>
           <Grid item xs={6} className={classes.rightSection}>
-            <Typography variant="h5">Park Indigo</Typography>
+            <Typography variant="h5">...</Typography>
             <p className={classes.description}>
-              Parking Enforcement Officer
+              ....
               <span className={classes.bull}>&bull;</span>
-              <em className={classes.date}>September 2019 – August 2020</em>
+              <em className={classes.date}>...</em>
             </p>
-            <p className={classes.jobDescription}>
-              Served as one of the front-line providers of customer services to
-              the general public for parking services.
-            </p>
+            <p className={classes.jobDescription}>...</p>
             <Typography variant="h5">Safal InfoTech</Typography>
             <p className={classes.description}>
               Web developer
               <span className={classes.bull}>&bull;</span>
-              <em className={classes.date}>July 2016 - April 2017</em>
+              <em className={classes.date}>Dec 2014 - Aug 2019</em>
+            </p>
+            <p className={classes.jobDescription}>
+              Developed various applications using ASP .NET, MVC 4.0, C#,
+              jQuery, JSON, ES6, JavaScript, React, redux, Semantic UI, Material
+              UI, Styled components, Visual Studio 2015, MS SQL Server 2012, web
+              storm, intellij
+            </p>
+            <p className={classes.description}>
+              Web developer - Intern
+              <span className={classes.bull}>&bull;</span>
+              <em className={classes.date}>Jul 2014 - Dec 2014</em>
             </p>
             <p className={classes.jobDescription}>
               Developed the application using ASP.NET, C# with MVC 4,
@@ -81,7 +89,8 @@ const Resume = ({ setCurrentSection }) => {
             <Typography variant="h5">Front-End Development</Typography>
             <p className={classes.jobDescription}>
               HTML5, CSS3, C#, ASP.NET, Java, PHP, JavaScript, React, Angular,
-              jQuery, ES6, Material UI, typescript, react-router 4 and prettier
+              Redux, Redux toolkit, jQuery, ES6, Semantic UI, Material UI,
+              typescript, react-router 4 and prettier
             </p>
             <Typography variant="h5">Back-End Development</Typography>
             <p className={classes.jobDescription}>

@@ -1,8 +1,4 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "./styles";
 
