@@ -73,9 +73,10 @@ const Header = ({ currentSection }) => {
             I am Ankit Patel
           </Typography>
           <Typography variant="h3" className={classes.secondHeader}>
-            I'm a Ottawa based Software Developer. I am a Self-driven learner
-            and passionate about technology. Activly looking for new
-            opportunities in web and mobile app development
+            I'm a Ottawa based Software Developer with 5+ years of professional
+            experience. I am a Self-driven learner and passionate about
+            technology. Activly looking for new opportunities in web and mobile
+            app development
           </Typography>
         </div>
       </div>
