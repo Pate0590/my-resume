@@ -49,9 +49,10 @@ const Resume = ({ setCurrentSection }) => {
             <Typography variant="h5">Bell Canada</Typography>
             <p className={classes.description}>
               <span className={classes.bull}>&bull;</span>
-              <em className={classes.date}>
+              <em className={classes.date}>Mar 2021 - Present</em>
+              <p className={classes.jobDescription}>
                 Installed and repaired Bell’s home phone, internet and Fibe TV
-              </em>
+              </p>
             </p>
             <p className={classes.jobDescription}>...</p>
             <Typography variant="h5">Safal InfoTech</Typography>
