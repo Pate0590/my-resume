@@ -46,11 +46,12 @@ const Resume = ({ setCurrentSection }) => {
             </Typography>
           </Grid>
           <Grid item xs={6} className={classes.rightSection}>
-            <Typography variant="h5">...</Typography>
+            <Typography variant="h5">Bell Canada</Typography>
             <p className={classes.description}>
-              ....
               <span className={classes.bull}>&bull;</span>
-              <em className={classes.date}>...</em>
+              <em className={classes.date}>
+                Installed and repaired Bell’s home phone, internet and Fibe TV
+              </em>
             </p>
             <p className={classes.jobDescription}>...</p>
             <Typography variant="h5">Safal InfoTech</Typography>
