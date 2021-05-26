@@ -54,7 +54,6 @@ const Resume = ({ setCurrentSection }) => {
                 Installed and repaired Bell’s home phone, internet and Fibe TV
               </p>
             </p>
-            <p className={classes.jobDescription}>...</p>
             <Typography variant="h5">Safal InfoTech</Typography>
             <p className={classes.description}>
               Web developer
