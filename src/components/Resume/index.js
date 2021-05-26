@@ -48,6 +48,7 @@ const Resume = ({ setCurrentSection }) => {
           <Grid item xs={6} className={classes.rightSection}>
             <Typography variant="h5">Bell Canada</Typography>
             <p className={classes.description}>
+              Field Service Technician
               <span className={classes.bull}>&bull;</span>
               <em className={classes.date}>Mar 2021 - Present</em>
               <p className={classes.jobDescription}>
@@ -58,7 +59,7 @@ const Resume = ({ setCurrentSection }) => {
             <p className={classes.description}>
               Web developer
               <span className={classes.bull}>&bull;</span>
-              <em className={classes.date}>Dec 2014 - Aug 2019</em>
+              <em className={classes.date}>Dec 2015 - Aug 2020</em>
             </p>
             <p className={classes.jobDescription}>
               Developed various applications using ASP .NET, MVC 4.0, C#,
@@ -69,7 +70,7 @@ const Resume = ({ setCurrentSection }) => {
             <p className={classes.description}>
               Web developer - Intern
               <span className={classes.bull}>&bull;</span>
-              <em className={classes.date}>Jul 2014 - Dec 2014</em>
+              <em className={classes.date}>Jul 2015 - Dec 2015</em>
             </p>
             <p className={classes.jobDescription}>
               Developed the application using ASP.NET, C# with MVC 4,
